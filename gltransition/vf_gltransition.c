@@ -570,7 +570,7 @@ AVFilter ff_vf_gltransition = {
   .preinit       = gltransition_framesync_preinit,
   .init          = init,
   .uninit        = uninit,
-  FILTER_QUERY_FUNC(query_formats),
+  .query_formats = query_formats,
   .activate      = activate,
   .inputs        = gltransition_inputs,
   .outputs       = gltransition_outputs,

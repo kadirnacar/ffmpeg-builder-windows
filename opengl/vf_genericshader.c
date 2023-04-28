@@ -180,7 +180,7 @@ AVFilter ff_vf_genericshader = {
   .priv_size     = sizeof(GenericShaderContext),
   .init          = init,
   .uninit        = uninit,
-  FILTER_QUERY_FUNC(query_formats),
+  .query_formats = query_formats,
   .inputs        = genericshader_inputs,
   .outputs       = genericshader_outputs,
   .priv_class    = &genericshader_class,
